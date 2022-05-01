@@ -1,5 +1,5 @@
 
-import {Test} from './pages/Test.jsx'
+import {Search} from './pages/Search.jsx'
 import  Viewer  from './pages/Viewer'
 import { Repo } from './pages/Repo'
 import AppBar from './pages/AppBar';
@@ -33,7 +33,7 @@ function App() {
       <Routes>
         <Route path='/'  element={<Viewer />}   />
         <Route path='/repo/:owner/:name'  element={<Repo />}   />
-        <Route path='/search/:query'  element={<Test />}   />
+        <Route path='/search/:query'  element={<Search/>}   />
         <Route path='*'  element={<ErrorPage />}   />
 
       </Routes>
